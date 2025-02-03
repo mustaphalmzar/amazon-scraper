@@ -3,8 +3,8 @@ from scraper import run_scraper
 import os
 import json
 from flask_cors import CORS  # ✅ استيراد CORS
-import nltk
-nltk.download('wordnet')
+import download_nltk
+
 
 
 app = Flask(__name__, static_folder='../frontend')
