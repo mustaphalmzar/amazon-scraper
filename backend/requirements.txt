@@ -1,0 +1,10 @@
+aiohttp
+asyncio
+beautifulsoup4
+nltk
+regex
+tqdm
+joblib
+click
+colorama
+flask

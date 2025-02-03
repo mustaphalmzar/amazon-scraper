@@ -1,0 +1,166 @@
+/* 🌑 إعداد الخلفية والألوان العامة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🗂️ تنسيق العنوان الرئيسي */
+h1 {
+    color: #a28cf6;
+    margin-bottom: 20px;
+}
+
+/* 🔍 تنسيق قسم البحث */
+.search-section input[type="text"],
+.search-section input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e8f0fe;
+    color: #333;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #7a5ef5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-section button:hover {
+    background-color: #6a4ce0;
+}
+
+/* 📊 تنسيق الفلترة */
+.filters-section {
+    margin: 10px 0;
+}
+
+.filters-section select,
+.filters-section button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #7a5ef5;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.filters-section select:hover,
+.filters-section button:hover {
+    background-color: #6a4ce0;
+}
+
+/* 🖼️ تنسيق نتائج المنتجات */
+.results-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.product-card {
+    background-color: #2c2c3f;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* 📋 معلومات المنتج */
+.product-info {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #d4d4d4;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #cccccc;
+}
+
+/* 🔗 زر عرض المنتج على أمازون */
+.view-link {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #7a5ef5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: background 0.3s;
+}
+
+.view-link:hover {
+    background-color: #6a4ce0;
+}
+
+/* 🔄 تنسيق أزرار التنقل بين الصفحات */
+.pagination-section {
+    margin-top: 20px;
+}
+
+.pagination-section button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #7a5ef5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.pagination-section button:hover {
+    background-color: #6a4ce0;
+}
+
+.pagination-section button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+/* 📱 تحسين العرض على الهواتف */
+@media (max-width: 600px) {
+    .search-section input,
+    .filters-section select,
+    .filters-section button {
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    .results-section {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
