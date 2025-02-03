@@ -2,6 +2,7 @@ let currentPage = 1;
 const productsPerPage = 53;
 let allProducts = [];
 
+
 // ✅ البحث عن المنتجات
 function searchProducts() {
     const keyword = document.getElementById('keyword').value;
@@ -16,7 +17,7 @@ function searchProducts() {
     document.getElementById('results').innerHTML = "<p>Loading...</p>";
 
     // ✅ إرسال الكلمات المفتاحية إلى الخادم لمعالجة المرادفات
-    fetch('http://127.0.0.1:5000/scrape', {
+    fetch('https://amazon-scraper-lx5h.onrender.com/scrape', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ keyword, pages }) // يتم إرسال الكلمة الرئيسية هنا

@@ -8,5 +8,5 @@ joblib
 click
 colorama
 flask
+flask-cors
 gunicorn
-
